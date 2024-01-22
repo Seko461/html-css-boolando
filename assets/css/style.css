@@ -43,6 +43,14 @@ ul {
     line-height: 50px;
 }
 
+.categories>li:hover {
+    color: black;
+}
+
+.nav_icons>ul>li>i:hover {
+    color: black;
+}
+
 
 .logo {
     flex-grow: 1;
@@ -196,3 +204,41 @@ li:hover {
 }
 
 /* #endregion main */
+
+.site_footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--boolando-secondary);
+}
+
+.footer_container {
+    /* border: 1px solid white; */
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer_un_list {
+    font-size: .6rem;
+    line-height: 1.2rem;
+}
+
+.footer_un_list_icons {
+    line-height: 1.4rem;
+}
+
+h5 {
+    font-size: .8rem;
+}
+
+h6 {
+    font-size: .7rem;
+}
+
+
+.company {
+    flex-grow: 1;
+}
