@@ -29,10 +29,11 @@
 
 .main_menu {
     width: 80%;
-    border: 1px solid;
+    /* border: 1px solid; */
 
     display: flex;
     color: white;
+    font-size: 1rem;
 }
 
 ul {
@@ -60,9 +61,11 @@ ul {
 
 .container {
     width: 80vw;
-    height: 800px;
+    /* height: 800px; */
     padding-top: 80px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
@@ -70,14 +73,15 @@ ul {
     /* height: 400px; */
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
 }
 
 .card {
     width: calc((90%/3));
     /* height: 100%; */
     /* background-color: green; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .item {
@@ -124,7 +128,18 @@ ul {
     left: 40px;
 }
 
-.description {}
+.eco_2 {
+    color: white;
+    font-weight: bold;
+    font-size: .75rem;
+    background-color: var(--boolando-green);
+    width: max-content;
+    padding: 2px 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
 
 .label {
     color: gray;
@@ -151,10 +166,33 @@ ul {
     text-decoration: line-through;
 }
 
-/* .top_left {
+.b {
+    position: absolute;
+    left: 0;
+    opacity: 0%;
+}
 
-    background-image: url(/assets/img/boolando_images/img_utilities/1.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .b {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.card:hover .a {
+    opacity: 0%;
+}
+
+.card:hover .heart {
+    color: var(--boolando-red);
+
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+/* #endregion main */
